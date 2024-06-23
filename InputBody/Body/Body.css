@@ -1,0 +1,201 @@
+*{
+    margin: 0;
+}
+.body{
+    width: 100%;
+    height: 100vh;
+    box-shadow:inset -150px 0px 200px #0c1012;
+    background-color:#2596be;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+.container{
+    background-color: #2596be;
+    box-shadow:
+        inset -200px 0 250px 0 #142227,/* Right */
+        -100px 0 150px 0 #0f1315,/*left*/
+         0 20px 30px 0 #0b1214, /* Bottom */
+         0 -20px 30px 0 #62c4e8; /* Top */
+    height:70%;
+    width:70%;
+    transform: translateY(-30px);
+}
+.outerSlider{
+    height:60%;
+    width: 55%;
+    background-color:white;
+    margin-left:35%;
+    margin-top:12%;
+    border-radius:2rem;
+    
+}
+.innerSlider{
+    width:60%;
+    height:85%;
+    background-color: white;
+    transform:translate(60%,9%);
+    display: flex;
+    flex-direction: column;
+    justify-content:space-between;
+    align-items: center;
+    
+    
+}
+.title{
+    height:20%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: x-large;
+    font-family: Arial, Helvetica, sans-serif;
+    color:#2596be;
+    text-shadow:2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-weight: 900;
+}
+.innerSlider form{
+    width: 100%;
+    margin-top: 0;
+    transform: translateY(-20px);
+}
+.form-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.createForget{
+    margin:0;
+    height: 20%;
+    display: flex;
+    flex-direction:row;
+    justify-content:space-between;
+    align-items:center;
+    width: 100%;
+    
+}
+.input{
+    width: 100%;
+    margin-bottom: 1rem;
+}
+.input input {
+    appearance: none; /* Remove default styling */
+    -webkit-appearance: none; /* For WebKit browsers */
+    -moz-appearance: none; /* For Mozilla browsers */
+    background-color: transparent; /* Remove default background */
+    border: none; /* Remove default border */
+    padding: 0; /* Reset padding */
+    margin: 0; /* Reset margin */
+    font-family: inherit; /* Use parent font */
+    font-size: inherit; /* Use parent font size */
+    color: inherit; /* Use parent color */
+    outline: none; /* Remove default focus outline */
+    box-shadow: none; /* Remove default box shadow */
+    resize: none; /* Disable textarea resizing */
+    /* Add any other styles specific to your design */
+    border-top:0.5px solid white;
+    border-right:0.5px solid white;
+    border-bottom:2px solid black;
+    width: 100%;
+    line-height:1.7;
+    cursor: pointer;
+    
+}
+.innerInput{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items:center;
+}
+
+.label{
+    transform: translateY(25px);
+    display: inline-block;
+    transition:all 0.6s linear;
+    
+}
+.email:hover .label {
+    transform: translateY(12px);
+    font-size: small;
+}
+.password:hover .label {
+    transform: translateY(12px);
+    font-size: small;
+}
+.username:hover .label {
+    transform: translateY(12px);
+    font-size: small;
+}
+
+.button{
+    width: 100%;
+}
+.button button{
+    background: none;
+    border: none;
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+    align-items: center;
+    height:2.4rem;
+    width: 100%;
+    border-radius:4rem;
+    background-color:#1c7393;
+    color:white;
+    font-weight:900;
+    font-size: medium;
+    text-shadow:0.1px 0.1px 1px white;
+    box-shadow:inset -10px -10px 30px #25363e;
+}
+
+.createForget .div{
+    transition: text-decoration 2s ease; /* Transition only text-decoration */
+}
+
+.createForget div:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.imgSlider img{
+    
+    width:20rem;
+    height:23.046875rem;
+    transform: translate(5rem,-21.25rem);
+    border-radius:4rem;
+    
+    
+}
+.innerSlider{
+    transition: all 2s linear;
+}
+.outerSlider{
+    transition: all 2s linear;
+}
+.imgSlider.img{
+    transition: all 1s linear;
+}
+
+/* Add styles for slide animation */
+.outerSlider.slide-left {
+    transform: translateX(-200px); /* Slide left by 200px */
+  }
+  
+  .innerSlider.slide-left {
+    transform: translate(30px,20px); /* Slide left by 100px */
+    
+  }
+  
+  .imgSlider.slide-right {
+    transform: translateX(350px); /* Slide right by 300px */
+    transition: transform 2s ease; /* Add transition for smooth animation */
+  }
+
+  .imgSlider.slide-left {
+    transform: translateX(0px); /* Slide right by 300px */
+    transition: transform 2s ease; /* Add transition for smooth animation */
+  }
+  
